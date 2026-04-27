@@ -91,3 +91,18 @@ Example:
 - Extend logging and metrics collection for production observability.
 - Support query parameters like `?count=n` for the endpoint.
 - Use probabilistic structures like Bloom Filters for optimization.
+
+
+
+
+
+<img width="1361" height="474" alt="image" src="https://github.com/user-attachments/assets/7d35fd85-7261-4d9e-9043-e059300e4683" />
+
+
+<img width="785" height="276" alt="image" src="https://github.com/user-attachments/assets/4bbce1d1-3769-4ee0-833c-e0b745db2ac9" />
+
+
+
+
+
+
