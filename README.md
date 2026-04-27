@@ -94,7 +94,17 @@ Example:
 
 
 
+| Decision            | Choice             | Benefit                                     | Trade-off                             |
+| ------------------- | ------------------ | ------------------------------------------- | ------------------------------------- |
+| Concurrency control | `SemaphoreSlim`    | Protects external API, prevents overload    | Slight complexity vs no control       |
+| Parallel calls      | `Task.WhenAll`     | Fast response time                          | Risk of many simultaneous requests    |
+| Over-fetching       | `count * 2`        | Simpler logic, ensures enough valid results | Extra API calls, not fully optimal    |
+| Caching             | `IMemoryCache`     | Reduces latency + API usage                 | Data not shared across instances      |
+| Error handling      | Skip failed items  | Keeps API stable and responsive             | Possible missing stories              |
+| Simplicity          | No retries / Polly | Easier to implement and read                | Less resilience to transient failures |
 
+
+“I optimized for simplicity and performance using caching and controlled concurrency, accepting some trade-offs in efficiency and advanced resilience features.”
 
 <img width="1361" height="474" alt="image" src="https://github.com/user-attachments/assets/7d35fd85-7261-4d9e-9043-e059300e4683" />
 
